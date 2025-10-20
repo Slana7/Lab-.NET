@@ -1,0 +1,42 @@
+@BookApi_HostAddress = http://localhost:5020
+
+### Get all books
+GET {{BookApi_HostAddress}}/books
+Accept: application/json
+
+###
+
+### Create a book
+POST {{BookApi_HostAddress}}/books
+Content-Type: application/json
+
+{
+  "title": "Clean Code",
+  "author": "Robert Martin",
+  "year": 2008
+}
+
+###
+
+### Create another book
+POST {{BookApi_HostAddress}}/books
+Content-Type: application/json
+
+{
+  "title": "The Pragmatic Programmer",
+  "author": "David Thomas",
+  "year": 1999
+}
+
+###
+
+### Get book by ID
+GET {{BookApi_HostAddress}}/books/1
+Accept: application/json
+
+###
+
+### Delete a book
+DELETE {{BookApi_HostAddress}}/books/1
+
+###
