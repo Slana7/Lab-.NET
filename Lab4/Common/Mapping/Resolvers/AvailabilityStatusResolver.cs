@@ -1,7 +1,7 @@
 using AutoMapper;
-using Lab4.Models;
+using Lab4.Features.Books;
 
-namespace Lab4.Mapping.Resolvers;
+namespace Lab4.Common.Mapping.Resolvers;
 
 public class AvailabilityStatusResolver : IValueResolver<Book, object, string>
 {
@@ -22,4 +22,5 @@ public class AvailabilityStatusResolver : IValueResolver<Book, object, string>
         return "In Stock";
     }
 }
+
 

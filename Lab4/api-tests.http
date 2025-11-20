@@ -18,14 +18,27 @@ Content-Type: application/json
 
 ###
 
-### Create another book
+### Create a book with custom Correlation ID
 POST {{BookApi_HostAddress}}/books
 Content-Type: application/json
+X-Correlation-ID: TESTCORR12345678
 
 {
   "title": "The Pragmatic Programmer",
   "author": "David Thomas",
   "year": 1999
+}
+
+###
+
+### Create another book (auto-generated Correlation ID)
+POST {{BookApi_HostAddress}}/books
+Content-Type: application/json
+
+{
+  "title": "Design Patterns",
+  "author": "Gang of Four",
+  "year": 1994
 }
 
 ###

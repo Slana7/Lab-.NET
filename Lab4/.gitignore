@@ -1,0 +1,135 @@
+## .NET Core / ASP.NET Core Project
+## Tailored for: .NET 9 Web API with JetBrains Rider
+
+#######################
+# Build Output
+#######################
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# MSBuild Binary and Structured Log
+*.binlog
+.bin/
+
+#######################
+# IDE & Editor Files
+#######################
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+
+# Visual Studio (if occasionally used)
+.vs/
+*.user
+*.userosscache
+*.suo
+
+#######################
+# .NET Core
+#######################
+
+# User-specific files
+*.userprefs
+
+# Build cache files
+*.[Cc]ache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+#######################
+# Testing
+#######################
+
+# xUnit / Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+#######################
+# Database Files
+#######################
+
+# SQLite databases (runtime generated)
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+#######################
+# ASP.NET Core
+#######################
+
+# Publishing
+*.[Pp]ublish.xml
+*.azurePubxml
+*.pubxml
+*.publishproj
+publish/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+#######################
+# Miscellaneous
+#######################
+
+# Temporary files
+~$*
+*~
+*.tmp
+*.temp
+
+# Backup files
+Backup*/
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local history
+.localhistory/
+
+#######################
+# Project-Specific
+#######################
+
+# Exclude auto-generated markdown docs
+INTEGRATION_COMPLETE.md
+README_*.md
+

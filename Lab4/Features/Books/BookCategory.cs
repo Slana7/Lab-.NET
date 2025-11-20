@@ -1,4 +1,4 @@
-namespace Lab4.Models;
+namespace Lab4.Features.Books;
 
 public enum BookCategory
 {
@@ -7,4 +7,3 @@ public enum BookCategory
     Technical = 2,
     Children = 3
 }
-

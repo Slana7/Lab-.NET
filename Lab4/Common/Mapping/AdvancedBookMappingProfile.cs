@@ -1,9 +1,9 @@
 using AutoMapper;
-using Lab4.Models;
-using Lab4.DTOs;
-using Lab4.Mapping.Resolvers;
+using Lab4.Features.Books;
+using Lab4.Features.Books.DTOs;
+using Lab4.Common.Mapping.Resolvers;
 
-namespace Lab4.Mapping;
+namespace Lab4.Common.Mapping;
 
 public class AdvancedBookMappingProfile : Profile
 {
@@ -20,7 +20,9 @@ public class AdvancedBookMappingProfile : Profile
         // Map Book to BookProfileDto with custom resolvers
         CreateMap<Book, BookProfileDto>()
             .ForMember(dest => dest.CategoryDisplayName, opt => opt.MapFrom<CategoryDisplayResolver>())
+            .ForMember(dest => dest.Price, opt => opt.MapFrom<ConditionalPriceResolver>())
             .ForMember(dest => dest.FormattedPrice, opt => opt.MapFrom<PriceFormatterResolver>())
+            .ForMember(dest => dest.CoverImageUrl, opt => opt.MapFrom<ConditionalCoverImageResolver>())
             .ForMember(dest => dest.PublishedAge, opt => opt.MapFrom<PublishedAgeResolver>())
             .ForMember(dest => dest.AuthorInitials, opt => opt.MapFrom<AuthorInitialsResolver>())
             .ForMember(dest => dest.AvailabilityStatus, opt => opt.MapFrom<AvailabilityStatusResolver>());
